@@ -5,7 +5,11 @@ body {
     line-height: 2;
     font-weight: 500;
     padding: 0;
-    font-family: 'Roboto',Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 .overlay {
@@ -19,99 +23,52 @@ body {
     display: none;
 }
 
-.sidebar.open + .overlay {
+.sidebar.open+.overlay {
     display: block;
 }
 
 .fixed-banner {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    height: 11%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
-    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    z-index: 100;
 }
 
 .fixed-banner img {
-    height: 50px;
+    height: 40px;
     object-fit: cover;
     margin: 0px 50px;
 }
 
 .mainBack {
-    margin-top: 50px;
     width: 100%;
     height: auto;
     max-height: 400px;
     object-fit: cover;
-    
+    display: block;
 }
 
 .content {
     padding: 5px 30px;
-    font-size: 20px;
+    font-size: 23px;
     text-align: left;
-    max-width: 50%;
+    max-width: 90%;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 50px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    align-items: center;
-    gap: 10px;
-    top: 0;
-    right: -300px;
-    width: 19%;
-    height: 100%;
-    padding-top: 30px;
-    background-color: white;
-    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease;
-    z-index: 1001;
-    overflow-y: auto;
-}
 
-.sidebar .logo-sidebar {
-    width: 40%;
-    margin-bottom: 20%;
-}
-
-.chunkyBtn {
-    --btn-color: #213c7a;
-    --btn-bg: rgb(224, 235, 242);
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: 90%;
-    background-color: var(--btn-bg);
-    color: var(--btn-color);
-    padding: 8px 20px;
-    border-radius: 8px;
-    border: 0;
-    cursor: pointer;
-    font-size: 1rem;
-    border: 2px solid var(--btn-color);
-    transition: 100ms ease;
-    box-shadow: 3px 3px 0 0 var(--btn-color);
-}
-
-.chunkyBtn:hover {
-    box-shadow: 1px 1px 0 0 var(--btn-color);
-}
 
 footer p {
     background-color: #3a5baa;
@@ -124,63 +81,3 @@ footer p {
     font-size: 12px;
 }
 
-.noselect {
-    margin-top: 90%;
-    width: 110px;
-    height: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-    background: #3a5baa;
-}
-
-.noselect,
-.noselect span {
-    transition: 400ms;
-}
-
-.noselect .text {
-    transform: translateX(15px);
-    color: white;
-    font-weight: bold;
-}
-
-.noselect .icon {
-    position: absolute;
-    border-left: 1px solid #3a5baa;
-    transform: translateX(70px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.noselect svg {
-    width: 15px;
-    fill: #eee;
-}
-
-.noselect:hover {
-    background: #213c7a;
-}
-
-.noselect:hover .text {
-    color: transparent;
-}
-
-.noselect:hover .icon {
-    width: 100px;
-    border-left: none;
-    transform: translateX(0);
-    transition: transform 0.4s ease;
-}
-
-.noselect:focus {
-    outline: none;
-}
-
-.noselect:active .icon svg {
-    transform: scale(0.4);
-}

@@ -1,0 +1,108 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    gap: 10px;
+    top: 0;
+    right: -300px;
+    width: 19%;
+    height: 100%;
+    padding-top: 30px;
+    background-color: white;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.sidebar .logo-sidebar {
+    width: 40%;
+    margin-bottom: 30%;
+}
+
+.chunkyBtn {
+    --btn-color: #213c7a;
+    --btn-bg: rgb(224, 235, 242);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 90%;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid var(--btn-color);
+    transition: 100ms ease;
+    box-shadow: 3px 3px 0 0 var(--btn-color);
+}
+
+.chunkyBtn:hover {
+    box-shadow: 1px 1px 0 0 var(--btn-color);
+}
+
+.noselect {
+    margin-top: 100%;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #3a5baa;
+}
+
+.noselect,
+.noselect span {
+    transition: 400ms;
+}
+
+.noselect .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+}
+
+.noselect .icon {
+    position: absolute;
+    border-left: 1px solid #3a5baa;
+    transform: translateX(70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noselect svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.noselect:hover {
+    background: #213c7a;
+}
+
+.noselect:hover .text {
+    color: transparent;
+}
+
+.noselect:hover .icon {
+    width: 100px;
+    border-left: none;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+}
+
+.noselect:focus {
+    outline: none;
+}
+
+.noselect:active .icon svg {
+    transform: scale(0.4);
+}

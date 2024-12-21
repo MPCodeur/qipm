@@ -5,22 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qipm</title>
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="icon" href="Images/cropped-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="icon" href="Images/cropped-logo.png" type="image/png">
     <script src="Scripts/sidebar.js"></script>
 </head>
 <body>
-    <header class="fixed-banner">
-        <img class="left-image" src="Images/logo.png" alt="Image gauche">
-        <h1 class="banner-text">qipm.fr</h1>
-        <img class="right-image" src="Images/menu_icon.png" alt="Image droite" onclick="toggleSidebar()">
-    </header>
     <main>
         <div id="sidebar" class="sidebar">
             <img class="logo-sidebar" src="Images/logo.png" alt="Logo">
             <button class="chunkyBtn" onclick="window.open('Pages/presentation.html', '_blank')">Présentation</button>
             <button class="chunkyBtn" onclick="window.open('Pages/presentation.html', '_blank')">Échange et partage</button>
-            <button class="chunkyBtn" onclick="window.open('Pages/presentation.html', '_blank')">À votre écoute</button>
-            
             <button class="noselect" onclick="toggleSidebar()">
                 <span class="text">Fermer</span><span class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -28,12 +22,28 @@
                     </svg>
                 </span>
             </button>
-        
         </div>
-        <img class="mainBack" src="Images/qipm.jpg" alt="Bannière">
         <div id="overlay" class="overlay"></div>
+        <img class="mainBack" src="Images/qipm.jpg" alt="Bannière">
+        <div class="fixed-banner">
+            <img class="left-image" src="Images/logo.png" alt="Image gauche">
+            <h1 class="banner-text">qipm.fr</h1>
+            <img class="right-image" src="Images/menu_icon2.png" alt="Image droite" onclick="toggleSidebar()">
+        </div>
         <div class="content">
-            <p>Bienvenue sur notre site internet et merci de nous rejoindre.
+            <p>Bienvenue sur notre site internet et merci de nous rejoindre!
+                <br>qipm.fr est le fruit d’une feuille de route constructive pour vous accompagner et vous conseiller sur les relations humaines, 
+                managériales et sociales dans votre entreprise.
+                <br> Une grille de lecture simple et authentique, axée sur la communication et le dialogue social pour évoluer ensemble et travailler autrement.</p>
+        </div>
+        <div class="content">
+            <p>Bienvenue sur notre site internet et merci de nous rejoindre!
+                <br>qipm.fr est le fruit d’une feuille de route constructive pour vous accompagner et vous conseiller sur les relations humaines, 
+                managériales et sociales dans votre entreprise.
+                <br> Une grille de lecture simple et authentique, axée sur la communication et le dialogue social pour évoluer ensemble et travailler autrement.</p>
+        </div>
+        <div class="content">
+            <p>Bienvenue sur notre site internet et merci de nous rejoindre!
                 <br>qipm.fr est le fruit d’une feuille de route constructive pour vous accompagner et vous conseiller sur les relations humaines, 
                 managériales et sociales dans votre entreprise.
                 <br> Une grille de lecture simple et authentique, axée sur la communication et le dialogue social pour évoluer ensemble et travailler autrement.</p>
