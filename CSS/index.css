@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(224, 235, 242);
+    color: #3a5baa;
+    margin: 0;
+    line-height: 1.6;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.fixed-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.fixed-banner img {
+    height: 50px;
+    object-fit: cover;
+    margin: 0px 50px;
+}
+
+.mainBack {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.content {
+    /*padding: 0 200px;
+    margin-top: 20px;*/
+    padding: 20px;
+    font-size: 18px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 260px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    padding-left: 40px;
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.sidebar p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+.sidebar .close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sidebar .close-button:hover {
+    background-color: #d32f2f;
+}
