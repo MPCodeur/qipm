@@ -59,6 +59,7 @@ body {
     max-width: 50%;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 50px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
@@ -83,7 +84,7 @@ body {
 }
 
 .sidebar .logo-sidebar {
-    width: 50%;
+    width: 40%;
     margin-bottom: 20%;
 }
 
@@ -112,21 +113,6 @@ body {
     box-shadow: 1px 1px 0 0 var(--btn-color);
 }
 
-.sidebar .close-button {
-    background-color: #3a5baa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    width: 100px;
-    margin-top: 90%;
-}
-
-.sidebar .close-button:hover {
-    background-color: #213c7a;
-}
-
 footer p {
     background-color: #3a5baa;
     color: white;
@@ -136,4 +122,65 @@ footer p {
     margin-bottom: 0;
     width: 100%;
     font-size: 12px;
+}
+
+.noselect {
+    margin-top: 90%;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #3a5baa;
+}
+
+.noselect,
+.noselect span {
+    transition: 400ms;
+}
+
+.noselect .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+}
+
+.noselect .icon {
+    position: absolute;
+    border-left: 1px solid #3a5baa;
+    transform: translateX(70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noselect svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.noselect:hover {
+    background: #213c7a;
+}
+
+.noselect:hover .text {
+    color: transparent;
+}
+
+.noselect:hover .icon {
+    width: 100px;
+    border-left: none;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+}
+
+.noselect:focus {
+    outline: none;
+}
+
+.noselect:active .icon svg {
+    transform: scale(0.4);
 }

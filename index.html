@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qipm</title>
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="icon" href="Images/cropped-logo.png" type="image/x-icon">
     <script src="Scripts/sidebar.js"></script>
 </head>
 <body>
@@ -19,16 +20,18 @@
             <button class="chunkyBtn" onclick="window.open('Pages/presentation.html', '_blank')">Présentation</button>
             <button class="chunkyBtn" onclick="window.open('Pages/presentation.html', '_blank')">Échange et partage</button>
             <button class="chunkyBtn" onclick="window.open('Pages/presentation.html', '_blank')">À votre écoute</button>
-            <button class="close-button" onclick="toggleSidebar()">Fermer</button>
+            
+            <button class="noselect" onclick="toggleSidebar()">
+                <span class="text">Fermer</span><span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+                    </svg>
+                </span>
+            </button>
+        
         </div>
         <img class="mainBack" src="Images/qipm.jpg" alt="Bannière">
         <div id="overlay" class="overlay"></div>
-        <div class="content">
-            <p>Bienvenue sur notre site internet et merci de nous rejoindre.
-                <br>qipm.fr est le fruit d’une feuille de route constructive pour vous accompagner et vous conseiller sur les relations humaines, 
-                managériales et sociales dans votre entreprise.
-                <br> Une grille de lecture simple et authentique, axée sur la communication et le dialogue social pour évoluer ensemble et travailler autrement.</p>
-        </div>
         <div class="content">
             <p>Bienvenue sur notre site internet et merci de nous rejoindre.
                 <br>qipm.fr est le fruit d’une feuille de route constructive pour vous accompagner et vous conseiller sur les relations humaines, 
