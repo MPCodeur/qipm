@@ -1,0 +1,139 @@
+
+#texteForm {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(243, 242, 242);
+    padding: 10px 15px 10px 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 0px 0px 10px black;
+}
+
+#formulaire {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 450px;
+    padding: 0px 20px 20px 20px;
+    background-color: #3a5baa;
+    background-size: contain;
+    box-shadow: 0px 0px 12px black;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    width: 97%;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.labelProjet {
+    margin-top: 15px;
+}
+
+.textProjet {
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap:10px;
+}
+
+#prenom, #nom, #email, #projet {
+    width: 100%;
+    padding:5px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label {
+    color: white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    font-size: 17px;
+    border-radius: 15px;
+    color: black;
+    background-color: rgb(224, 235, 242);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+}
+
+button:hover {
+    background-color: white;
+}
+
+.checkCondition {
+    line-height: 1;
+    display: flex;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color:#78e665;    
+}
+
+#status {
+    position: fixed;
+    top: 50%;
+    width: 50%;
+    max-width: 150px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+#status.sucess {
+    background-color: #78e665;
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: #de7657;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 0.5;
+        pointer-events: all;
+    }
+
+    50%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
