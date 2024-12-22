@@ -68,7 +68,7 @@ label {
     border-radius: 3px;
 }
 
-button {
+#bouttonSend {
     width: 100%;
     border: none;
     padding: 15px 20px 15px 20px;
@@ -81,7 +81,7 @@ button {
     transition: 0.3s ease background-color;
 }
 
-button:hover {
+#bouttonSend:hover {
     background-color: white;
 }
 

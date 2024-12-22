@@ -20,60 +20,63 @@
             emailjs.init("GDzoCCgQXqdRQ79no");
         })();
     </script>
-
 </head>
 
 <body>
-    <div class="fixed-banner">
-        <img class="left-image" src="../Images/logo.png" alt="Image gauche">
-        <h1 class="banner-text">À votre écoute</h1>
-        <img class="right-image" src="../Images/menu_icon2.png" alt="Image droite" onclick="toggleSidebar()">
-    </div>
-    <div id="sidebar" class="sidebar">
-        <img class="logo-sidebar" src="../Images/logo.png" alt="Logo">
-        <button class="chunkyBtn" onclick="location.href='../index.html'">Accueil</button>
-        <button class="chunkyBtn" onclick="location.href='presentation.html'">Présentation</button>
-        <button class="chunkyBtn" onclick="location.href='echange-partage.html'">Échange et partage</button>
-
-        <button class="noselect" onclick="toggleSidebar()">
-            <span class="text">Fermer</span><span class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
-                    </path>
-                </svg>
-            </span>
-        </button>
-    </div>
-    <section id="formulaire">
-        <div class="formContainer">
-            <div class="form-group">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom">
-            </div>
-            <div class="form-group">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-            </div>
-            <div class="labelProjet">
-                <label for="projet">Votre projet</label>
-            </div>
-            <div class="textProjet">
-                <textarea name="projet" id="projet" cols="30" rows="10"></textarea>
-            </div>
-            <div class="checkCondition">
-                <input type="checkbox" id="checkCondition" name="checkCondition" required>
-                <label for="checkCondition">J'accepte les conditions d'utilisation des données dans le cadre de ma
-                    demande</label>
-            </div>
-            <button type="submit" onclick="sendMail()" id="boutton">Envoyer</button>
+    <main>
+        <div class="fixed-banner">
+            <img class="left-image" src="../Images/logo.png" alt="Image gauche">
+            <h1 class="banner-text">À votre écoute</h1>
+            <img class="right-image" src="../Images/menu_icon2.png" alt="Image droite" onclick="toggleSidebar()">
         </div>
-        <div id="status"></div>
-    </section>
+        <div id="sidebar" class="sidebar">
+            <img class="logo-sidebar" src="../Images/logo.png" alt="Logo">
+            <button class="chunkyBtn" onclick="location.href='../index.html'">Accueil</button>
+            <button class="chunkyBtn" onclick="location.href='presentation.html'">Présentation</button>
+            <button class="chunkyBtn" onclick="location.href='echange-partage.html'">Échange et partage</button>
+
+            <button class="noselect" onclick="toggleSidebar()">
+                <span class="text">Fermer</span><span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                        </path>
+                    </svg>
+                </span>
+            </button>
+        </div>
+        <div id="overlay" class="overlay"></div>
+        
+        <section id="formulaire">
+            <div class="formContainer">
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom">
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="labelProjet">
+                    <label for="projet">Votre projet</label>
+                </div>
+                <div class="textProjet">
+                    <textarea name="projet" id="projet" cols="30" rows="10"></textarea>
+                </div>
+                <div class="checkCondition">
+                    <input type="checkbox" id="checkCondition" name="checkCondition" required>
+                    <label for="checkCondition">J'accepte les conditions d'utilisation des données dans le cadre de ma
+                        demande</label>
+                </div>
+                <button type="submit" onclick="sendMail()" id="bouttonSend">Envoyer</button>
+            </div>
+            <div id="status"></div>
+        </section>
+    </main>
 </body>
 
 </html>

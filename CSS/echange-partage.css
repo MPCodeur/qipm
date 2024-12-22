@@ -8,18 +8,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.content {
-    padding: 5px 30px;
-    font-size: 23px;
-    text-align: left;
-    max-width: 90%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
 
 .fixed-banner {
     position: sticky;
@@ -39,4 +27,17 @@ body {
     height: 40px;
     object-fit: cover;
     margin: 0px 50px;
+}
+
+.content {
+    padding: 5px 30px;
+    font-size: 23px;
+    text-align: left;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
