@@ -32,7 +32,7 @@ function sendMail(){
     .catch((err) => console.log(err));
 }
 window.addEventListener("DOMContentLoaded", function() {
-    var button = this.document.getElementById("boutton")
+    var button = this.document.getElementById("bouttonSend")
     var status = this.document.getElementById("status");
     var delay = 3400;
     
