@@ -12,31 +12,6 @@ h1 {
     font-size: 40px;
 }
 
-
-.sidebar.open+.overlay {
-    display: block;
-}
-
-.fixed-banner {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    z-index: 100;
-}
-
-.fixed-banner img {
-    height: 40px;
-    object-fit: cover;
-    margin: 0px 50px;
-}
-
 .mainBack {
     width: 100%;
     height: auto;
@@ -57,8 +32,6 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
-
-
 
 footer p {
     background-color: #3a5baa;
