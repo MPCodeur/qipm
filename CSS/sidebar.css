@@ -29,7 +29,11 @@
 
 .sidebar .logo-sidebar {
     width: 40%;
-    margin-bottom: 30%;
+}
+
+#qipm {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .chunkyBtn {
@@ -58,7 +62,7 @@
 }
 
 .noselect {
-    margin-top: 90%;
+    margin-top: 50%;
     width: 110px;
     height: 30px;
     cursor: pointer;
