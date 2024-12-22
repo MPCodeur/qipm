@@ -25,6 +25,35 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+.separateur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #3a5baa;
+    height: 50px;
+    width: 100%;
+    border-top: white 2px solid;
+    border-bottom: white 2px solid;
+    margin: 20px 0;
+}
+
+#txtsep {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#logosep {
+    height: 40px;
+}
+.side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    margin: 0 5%;
+}
+
 footer p {
     background-color: #3a5baa;
     color: white;
