@@ -21,3 +21,15 @@
 .fixed-banner .right-image:hover {
     cursor: pointer;
 }
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .fixed-banner img {
+        height: 30px;
+        margin: 0px 20px;
+    }
+}
