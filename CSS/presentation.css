@@ -35,3 +35,10 @@ footer p {
     width: 100%;
     font-size: 12px;
 }
+
+@media all and (max-width: 768px) {
+    .content {
+        max-width: 70%;
+    }
+
+}

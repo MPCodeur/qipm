@@ -137,3 +137,23 @@ input[type="checkbox"] {
         pointer-events: none;
     }
 }
+
+@media all and (max-width: 768px) {
+    #formulaire {
+        width: 80%;
+        margin: auto;
+        margin-top: 20%;
+    }
+
+    .form-group{
+        font-size: 22px;
+    }
+    .labelProjet {
+        font-size: 22px;
+    }
+
+
+
+
+
+}

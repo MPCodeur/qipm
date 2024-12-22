@@ -44,3 +44,12 @@ footer p {
     font-size: 12px;
 }
 
+@media all and (max-width: 768px) {
+    .content {
+        max-width: 70%;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
