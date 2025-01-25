@@ -9,7 +9,7 @@ function sendMail(){
         projet: document.getElementById("projet").value,
     };
     if (document.getElementById("email").value == "" || document.getElementById("projet").value == "" || checkbox.checked == false) {
-        alert("Les champs \"email\", et \"message\" doivent être remplis avec les conditions acceptées");
+        alert("Les champs \"email\", et \"projet\" doivent être remplis avec les conditions acceptées");
         checkErrorForm = true;
         return;
     } else {
